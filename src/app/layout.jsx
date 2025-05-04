@@ -29,12 +29,12 @@ export default async function RootLayout({ children }) {
     <Navbar
       logo={
         <div>
-          <b>Nextra</b>{' '}
-          <span style={{ opacity: '60%' }}>The Next Docs Builder</span>
+          <b>IELTS-9</b>{' '}
+          {/*<span style={{ opacity: '60%' }}>The Next Docs Builder</span>*/}
         </div>
       }
       // Next.js discord server
-      chatLink="https://discord.gg/hEM84NMkRv"
+      // chatLink="https://discord.gg/hEM84NMkRv"
     />
   )
   const pageMap = await getPageMap()
@@ -43,9 +43,9 @@ export default async function RootLayout({ children }) {
       <Head faviconGlyph="✦" />
       <body>
         <Layout
-          banner={<Banner storageKey="Nextra 2">Nextra 2 Alpha</Banner>}
+          // banner={<Banner storageKey="Nextra 2">Nextra 2 Alpha</Banner>}
           navbar={navbar}
-          footer={<Footer>MIT {new Date().getFullYear()} © Nextra.</Footer>}
+          footer={<Footer>{new Date().getFullYear()} © IELTS9.LIGANGYAN.COM</Footer>}
           editLink="Edit this page on GitHub"
           docsRepositoryBase="https://github.com/shuding/nextra/blob/main/examples/docs"
           sidebar={{ defaultMenuCollapseLevel: 1 }}
