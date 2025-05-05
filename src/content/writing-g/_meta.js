@@ -1,4 +1,5 @@
 export default {
+  'index':'',
   'apologize':'',
   'complain':'',
   'invitation':'',
@@ -9,4 +10,13 @@ export default {
   'thanks':'',
   'working':'',
   't2-education':'',
+  't2-working':'',
+  't2-technology-and-society':'',
+  't2-government-and-responsibility':'',
+  't2-family-and-relationships':'',
+  't2-environment':'',
+  't2-advertising':'',
+  't2-health-and-lifestyle':'',
+  't2-population':'',
+  't2-culture-and-travel':'',
 }

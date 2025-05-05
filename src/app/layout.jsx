@@ -29,7 +29,7 @@ export default async function RootLayout({ children }) {
     <Navbar
       logo={
         <div>
-          <b>IELTS-9</b>{' '}
+          <b>IELTS 9</b>{' '}
           {/*<span style={{ opacity: '60%' }}>The Next Docs Builder</span>*/}
         </div>
       }

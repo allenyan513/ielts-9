@@ -1,82 +1,22 @@
 ---
-sidebarTitle: Installation
+sidebarTitle: 总结
 ---
 
-# Docs Theme
+# 雅思口语总结
 
-import { Steps } from 'nextra/components'
+在**雅思口语考试**中，口语部分分为三个部分：**Task 1**（第一部分）、**Task 2**（第二部分）、和**Task 3**（第三部分）。每个部分的主题都涉及日常生活和常见的社会话题，但它们的**难度和深度**会有所不同。
 
-> [!NOTE]
->
-> This website is built with the docs theme.
+## 雅思口语 Task 1: 个人问题（Personal Questions)
 
-you can install the blog theme with the following commands:
+Task 1的重点是**个人生活**，你会被问到与**个人背景、兴趣、日常生活、家乡**等相关的问题。这一部分一般比较简单，考查的是你是否能流利且自然地表达日常话题。
 
-## Getting start
 
-<Steps>
+## 雅思口语 Task 2: 长时间表达（Long Turn)
 
-### Install Next.js, Nextra and React
+Task 2要求你根据给定的话题进行**1-2分钟的独立长时间表达**，并回答一些相关问题。在这一部分，你需要清楚、有条理地表达自己的观点和经验。
 
-```sh npm2yarn
-npm i react react-dom next nextra
-```
 
-### Install the docs theme
+## 雅思口语 Task 3: 深入讨论（Discussion Questions)
 
-```sh npm2yarn
-npm i nextra-theme-docs
-```
+Task 3涉及**更抽象的社会性话题**，通常是关于**社会问题、文化差异、教育、环境等**。你需要根据自己的观点进行更深入的讨论和分析。考官可能会根据你的回答提问更多的细节问题。
 
-### Create the following Next.js config and theme config under the root directory:
-
-```jsx filename="next.config.mjs"
-import nextra from 'nextra'
-
-const withNextra = nextra({
-  theme: 'nextra-theme-blog',
-  themeConfig: './theme.config.js'
-})
-export default withNextra()
-```
-
-```jsx filename="theme.config.js"
-export default {
-  projectLink: 'https://github.com/shuding/nextra', // GitHub link in the navbar
-  docsRepositoryBase: 'https://github.com/shuding/nextra/blob/master', // base URL for the docs repository
-  titleSuffix: ' – Nextra',
-  nextLinks: true,
-  prevLinks: true,
-  search: true,
-  customSearch: null, // customizable, you can use algolia for example
-  darkMode: true,
-  footer: true,
-  footerText: `MIT ${new Date().getFullYear()} © Shu Ding.`,
-  footerEditLink: `Edit this page on GitHub`,
-  logo: (
-    <>
-      <svg>...</svg>
-      <span>Next.js Static Site Generator</span>
-    </>
-  ),
-  head: (
-    <>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="description" content="Nextra: the next docs builder" />
-      <meta name="og:title" content="Nextra: the next docs builder" />
-    </>
-  )
-}
-```
-
-### You are good to go!
-
-</Steps>
-
----
-
-> [!TIP]
->
-> You can also use
-> [`<style jsx>`](https://nextjs.org/docs/basic-features/built-in-css-support#css-in-js)
-> to style elements inside `theme.config.js`.
